@@ -25,3 +25,13 @@ export const getSearchList = () => {
         })
     }
 }
+export const mouseEnter = () => ({
+    type: actionTypes.MOUSE_ENTER
+});
+export const mouseLeave = () => ({
+    type: actionTypes.MOUSE_LEAVE
+});
+export const changePage = (page) => ({
+    type: actionTypes.CHANGE_PAGE,
+    page
+});
