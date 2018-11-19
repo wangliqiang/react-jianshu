@@ -1,5 +1,5 @@
 import * as actionTypes from './actionTypes';
-import {fromJS} from 'immutable';
+import { fromJS } from 'immutable';
 import axios from 'axios';
 
 const changeList = (data) => ({
@@ -21,8 +21,8 @@ export const getSearchList = () => {
                 let data = res.data;
                 dispatch(changeList(data.data));
             }).catch((error) => {
-            console.log(error);
-        })
+                console.log(error);
+            })
     }
 }
 export const mouseEnter = () => ({
